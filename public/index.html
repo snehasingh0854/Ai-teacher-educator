@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Virtual Teacher</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">AI</div>
+
+            <div>
+                <strong>Virtual Teacher</strong>
+                <small>Learn Smarter</small>
+            </div>
+        </div>
+
+
+        <nav>
+
+            <button class="nav-item active" onclick="showPage('dashboard', this)">
+                <span>⌂</span>
+                Dashboard
+            </button>
+
+            <button class="nav-item" onclick="showPage('explore', this)">
+                <span>◉</span>
+                Explore
+            </button>
+
+            <button class="nav-item" onclick="showPage('materials', this)">
+                <span>▣</span>
+                My Materials
+            </button>
+
+            <button class="nav-item" onclick="showPage('plan', this)">
+                <span>✦</span>
+                AI Learning Plan
+            </button>
+
+            <button class="nav-item" onclick="showPage('teacher', this)">
+                <span>▶</span>
+                AI Teacher
+            </button>
+
+            <button class="nav-item" onclick="showPage('quiz', this)">
+                <span>✓</span>
+                Practice & Quiz
+            </button>
+
+            <button class="nav-item" onclick="showPage('progress', this)">
+                <span>◒</span>
+                My Progress
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <button class="nav-item">
+                <span>⚙</span>
+                Settings
+            </button>
+
+            <button class="nav-item">
+                <span>?</span>
+                Help & Support
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1 id="pageTitle">
+                    Good Morning, Sneha 👋
+                </h1>
+
+                <p id="pageSubtitle">
+                    Your personal AI teacher is ready to help you learn.
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button class="icon-btn">
+                    🔔
+                </button>
+
+                <div class="user">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div>
+                        <strong>Sneha</strong>
+                        <small>Student</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================================================= -->
+        <!-- DASHBOARD -->
+        <!-- ================================================= -->
+
+        <section id="dashboard" class="page active-page">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    placeholder="What do you want to learn today?"
+                >
+
+                <button>
+                    Search
+                </button>
+
+            </div>
+
+
+
+            <!-- STATISTICS -->
+
+            <div class="stats">
+
+                <div class="stat">
+
+                    <div class="stat-icon purple">
+                        ✦
+                    </div>
+
+                    <div>
+                        <strong>24</strong>
+                        <span>Learning Sessions</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-icon blue">
+                        ◉
+                    </div>
+
+                    <div>
+                        <strong>68%</strong>
+                        <span>Learning Progress</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-icon orange">
+                        🔥
+                    </div>
+
+                    <div>
+                        <strong>7 Days</strong>
+                        <span>Learning Streak</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <div class="stat-icon green">
+                        ★
+                    </div>
+
+                    <div>
+                        <strong>92%</strong>
+                        <span>Quiz Accuracy</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MAIN DASHBOARD GRID -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- AI TEACHER -->
+
+                <div class="card teacher-card">
+
+                    <div class="card-top">
+
+                        <div>
+
+                            <span class="label">
+                                ✦ AI RECOMMENDED
+                            </span>
+
+                            <h2>
+                                Continue Learning
+                            </h2>
+
+                            <p>
+                                Your AI teacher has prepared the next lesson
+                                based on your learning activity.
+                            </p>
+
+                        </div>
+
+                        <span class="live">
+                            ● READY
+                        </span>
+
+                    </div>
+
+
+                    <div class="video">
+
+                        <video controls>
+
+                            <source
+                                src="videos/teacher.mp4"
+                                type="video/mp4">
+
+                            Your browser does not support video playback.
+
+                        </video>
+
+
+                        <div class="video-placeholder">
+
+                            <div class="play">
+                                ▶
+                            </div>
+
+                            <strong>
+                                AI Teacher Lecture
+                            </strong>
+
+                            <span>
+                                Personalized explanation
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="lesson-info">
+
+                        <div>
+
+                            <span>
+                                NEXT LESSON
+                            </span>
+
+                            <h3>
+                                Understanding the Concept
+                            </h3>
+
+                            <p>
+                                12 min • AI generated explanation
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="primary-btn"
+                            onclick="showPage('teacher')">
+
+                            Start Lesson →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PERSONALIZED PLAN -->
+
+                <div class="card plan-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="label">
+                                ✦ PERSONALIZED
+                            </span>
+
+                            <h2>
+                                Today's Learning Plan
+                            </h2>
+
+                        </div>
+
+                        <span class="more">
+                            ⋮
+                        </span>
+
+                    </div>
+
+
+                    <div class="plan">
+
+                        <div class="plan-row done">
+
+                            <div class="circle">
+                                ✓
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Review previous concept
+                                </strong>
+
+                                <small>
+                                    Completed
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="plan-row current">
+
+                            <div class="circle">
+                                ▶
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Watch AI Teacher lesson
+                                </strong>
+
+                                <small>
+                                    Recommended now
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="plan-row">
+
+                            <div class="circle">
+                                3
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Practice questions
+                                </strong>
+
+                                <small>
+                                    10 questions
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="plan-row">
+
+                            <div class="circle">
+                                4
+                            </div>
+
+                            <div>
+                                <strong>
+                                    Personalized quiz
+                                </strong>
+
+                                <small>
+                                    Coming next
+                                </small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="outline-btn"
+                        onclick="showPage('plan')">
+
+                        View Full Plan →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LEARNING SOURCES -->
+
+            <div class="section-title">
+
+                <div>
+
+                    <span class="label">
+                        ALL-IN-ONE LEARNING
+                    </span>
+
+                    <h2>
+                        Learning Sources
+                    </h2>
+
+                </div>
+
+                <button class="text-btn">
+                    Explore All →
+                </button>
+
+            </div>
+
+
+            <div class="source-grid">
+
+
+                <div class="source-card">
+
+                    <div class="source-icon video-icon">
+                        ▶
+                    </div>
+
+                    <h3>
+                        Video Lectures
+                    </h3>
+
+                    <p>
+                        Learn through curated and AI-generated videos.
+                    </p>
+
+                    <span>
+                        Explore →
+                    </span>
+
+                </div>
+
+
+                <div class="source-card">
+
+                    <div class="source-icon notes-icon">
+                        ▤
+                    </div>
+
+                    <h3>
+                        Notes & PDFs
+                    </h3>
+
+                    <p>
+                        Upload and understand your study material.
+                    </p>
+
+                    <span>
+                        Explore →
+                    </span>
+
+                </div>
+
+
+                <div class="source-card">
+
+                    <div class="source-icon book-icon">
+                        ▣
+                    </div>
+
+                    <h3>
+                        Books & References
+                    </h3>
+
+                    <p>
+                        Find useful learning resources in one place.
+                    </p>
+
+                    <span>
+                        Explore →
+                    </span>
+
+                </div>
+
+
+                <div class="source-card">
+
+                    <div class="source-icon practice-icon">
+                        ✎
+                    </div>
+
+                    <h3>
+                        Practice
+                    </h3>
+
+                    <p>
+                        Solve questions and strengthen your concepts.
+                    </p>
+
+                    <span>
+                        Practice →
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- AI RECOMMENDATION -->
+
+            <div class="recommendation">
+
+                <div class="ai-avatar">
+                    ✦
+                </div>
+
+                <div>
+
+                    <span>
+                        AI INSIGHT
+                    </span>
+
+                    <h3>
+                        Your next best step is ready.
+                    </h3>
+
+                    <p>
+                        Based on your recent activity, I recommend
+                        revising this concept before attempting the quiz.
+                    </p>
+
+                </div>
+
+                <button
+                    onclick="showPage('teacher')">
+
+                    Learn Now →
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- EXPLORE -->
+        <!-- ================================================= -->
+
+        <section id="explore" class="page">
+
+            <div class="page-banner">
+
+                <span>✦ EXPLORE LEARNING</span>
+
+                <h2>
+                    Everything you need to learn, in one place.
+                </h2>
+
+                <p>
+                    Discover videos, notes, books, practice questions
+                    and AI-generated learning resources.
+                </p>
+
+            </div>
+
+
+            <div class="explore-search">
+
+                <input
+                    type="text"
+                    placeholder="Search a topic, concept or resource..."
+                >
+
+                <button class="primary-btn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <div class="explore-grid">
+
+                <div class="big-source">
+                    🎥
+                    <h3>Video Learning</h3>
+                    <p>Watch curated and AI-generated lessons.</p>
+                </div>
+
+                <div class="big-source">
+                    📄
+                    <h3>Study Material</h3>
+                    <p>Access notes, PDFs and uploaded content.</p>
+                </div>
+
+                <div class="big-source">
+                    📚
+                    <h3>Reference Resources</h3>
+                    <p>Explore additional learning sources.</p>
+                </div>
+
+                <div class="big-source">
+                    ✏️
+                    <h3>Practice</h3>
+                    <p>Practice concepts with adaptive questions.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- MATERIALS -->
+        <!-- ================================================= -->
+
+        <section id="materials" class="page">
+
+            <div class="page-banner">
+
+                <span>📄 STUDY MATERIAL</span>
+
+                <h2>
+                    Give your material to your AI Teacher.
+                </h2>
+
+                <p>
+                    Upload notes, PDFs or presentations and let AI
+                    understand and organize the content for you.
+                </p>
+
+            </div>
+
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <h2>
+                    Upload your learning material
+                </h2>
+
+                <p>
+                    PDF, PPT, DOCX or notes
+                </p>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    hidden
+                    onchange="uploadMaterial()"
+                >
+
+                <button
+                    class="primary-btn"
+                    onclick="document.getElementById('fileInput').click()">
+
+                    + Upload Material
+
+                </button>
+
+                <div id="uploadStatus"></div>
+
+            </div>
+
+
+            <div class="ai-process">
+
+                <h2>
+                    🤖 What AI does with your material
+                </h2>
+
+                <div class="process-grid">
+
+                    <div>
+                        <b>01</b>
+                        <h3>Understand</h3>
+                        <p>AI analyzes your content.</p>
+                    </div>
+
+                    <div>
+                        <b>02</b>
+                        <h3>Organize</h3>
+                        <p>Important concepts are identified.</p>
+                    </div>
+
+                    <div>
+                        <b>03</b>
+                        <h3>Personalize</h3>
+                        <p>A learning path is created for you.</p>
+                    </div>
+
+                    <div>
+                        <b>04</b>
+                        <h3>Teach</h3>
+                        <p>AI explains the content interactively.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- AI PLAN -->
+        <!-- ================================================= -->
+
+        <section id="plan" class="page">
+
+            <div class="page-banner">
+
+                <span>🧠 AI PERSONALIZATION</span>
+
+                <h2>
+                    Your Personalized Learning Plan
+                </h2>
+
+                <p>
+                    AI adapts your learning path according to your
+                    progress, performance and learning needs.
+                </p>
+
+            </div>
+
+
+            <div class="plan-dashboard">
+
+                <div class="plan-big-card">
+
+                    <h2>
+                        Today's Goal
+                    </h2>
+
+                    <div class="goal">
+
+                        <div class="goal-circle">
+                            68%
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Build strong conceptual understanding
+                            </h3>
+
+                            <p>
+                                Estimated learning time: 35 minutes
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="plan-big-card">
+
+                    <h2>
+                        AI Recommendation
+                    </h2>
+
+                    <p class="recommend-text">
+                        Focus on concepts where your recent quiz
+                        performance was lower.
+                    </p>
+
+                    <button class="primary-btn">
+                        Start Recommended Lesson
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item completed">
+                    <span>✓</span>
+                    <div>
+                        <h3>Previous concept review</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item active">
+                    <span>▶</span>
+                    <div>
+                        <h3>AI Teacher explanation</h3>
+                        <p>Current lesson</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>3</span>
+                    <div>
+                        <h3>Practice</h3>
+                        <p>10 adaptive questions</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span>4</span>
+                    <div>
+                        <h3>AI Assessment</h3>
+                        <p>Personalized quiz</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- AI TEACHER -->
+        <!-- ================================================= -->
+
+        <section id="teacher" class="page">
+
+            <div class="classroom">
+
+                <div class="class-video">
+
+                    <div class="class-top">
+
+                        <span>● AI TEACHER CLASSROOM</span>
+
+                        <span>
+                            Lesson 04
+                        </span>
+
+                    </div>
+
+
+                    <div class="big-video">
+
+                        <video controls>
+
+                            <source
+                                src="videos/teacher.mp4"
+                                type="video/mp4">
+
+                        </video>
+
+
+                        <div class="teacher-placeholder">
+
+                            <div class="teacher-avatar">
+                                👩‍🏫
+                            </div>
+
+                            <h2>
+                                Your AI Teacher
+                            </h2>
+
+                            <p>
+                                Personalized lesson is ready
+                            </p>
+
+                            <button class="play-large">
+                                ▶
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="class-controls">
+
+                        <button>▶</button>
+                        <button>🔊</button>
+                        <button>CC</button>
+
+                        <div class="fake-progress">
+                            <div></div>
+                        </div>
+
+                        <span>
+                            04:32 / 12:10
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="teacher-panel">
+
+                    <span class="label">
+                        AI TEACHER
+                    </span>
+
+                    <h2>
+                        Ask me anything.
+                    </h2>
+
+                    <p>
+                        I'm here to explain concepts, answer questions
+                        and help you learn at your own pace.
+                    </p>
+
+
+                    <div class="chat">
+
+                        <div class="ai-message">
+
+                            👩‍🏫
+
+                            <span>
+                                Hi Sneha! What would you like me
+                                to explain?
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chat-input">
+
+                        <input
+                            id="question"
+                            type="text"
+                            placeholder="Ask your AI Teacher...">
+
+                        <button onclick="askTeacher()">
+                            ↑
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- QUIZ -->
+        <!-- ================================================= -->
+
+        <section id="quiz" class="page">
+
+            <div class="page-banner">
+
+                <span>📝 AI ASSESSMENT</span>
+
+                <h2>
+                    Test your understanding
+                </h2>
+
+                <p>
+                    Questions are personalized from your learning
+                    material and previous performance.
+                </p>
+
+            </div>
+
+
+            <div class="quiz-card">
+
+                <div class="quiz-header">
+
+                    <span>
+                        QUESTION 1 OF 5
+                    </span>
+
+                    <strong>
+                        20%
+                    </strong>
+
+                </div>
+
+
+                <div class="quiz-progress">
+                    <div></div>
+                </div>
+
+
+                <h2>
+                    Which learning approach is best for
+                    understanding a difficult concept?
+                </h2>
+
+
+                <div class="options">
+
+                    <button onclick="selectAnswer(this)">
+                        A. Memorize everything immediately
+                    </button>
+
+                    <button onclick="selectAnswer(this)">
+                        B. Understand the concept with examples
+                    </button>
+
+                    <button onclick="selectAnswer(this)">
+                        C. Skip the difficult concept
+                    </button>
+
+                    <button onclick="selectAnswer(this)">
+                        D. Only read the title
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="primary-btn next-btn"
+                    onclick="nextQuestion()">
+
+                    Next Question →
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================================= -->
+        <!-- PROGRESS -->
+        <!-- ================================================= -->
+
+        <section id="progress" class="page">
+
+            <div class="page-banner">
+
+                <span>📊 LEARNING ANALYTICS</span>
+
+                <h2>
+                    Your Learning Progress
+                </h2>
+
+                <p>
+                    Track your growth and see where AI recommends
+                    you focus next.
+                </p>
+
+            </div>
+
+
+            <div class="progress-stats">
+
+                <div>
+                    <strong>68%</strong>
+                    <span>Overall Progress</span>
+                </div>
+
+                <div>
+                    <strong>92%</strong>
+                    <span>Quiz Accuracy</span>
+                </div>
+
+                <div>
+                    <strong>12h</strong>
+                    <span>Study Time</span>
+                </div>
+
+                <div>
+                    <strong>7</strong>
+                    <span>Day Streak</span>
+                </div>
+
+            </div>
+
+
+            <div class="analytics-card">
+
+                <h2>
+                    AI Learning Analysis
+                </h2>
+
+                <div class="analysis">
+
+                    <div>
+
+                        <span>Concept Understanding</span>
+
+                        <div class="bar">
+                            <div style="width:82%"></div>
+                        </div>
+
+                        <strong>82%</strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Practice Performance</span>
+
+                        <div class="bar">
+                            <div style="width:74%"></div>
+                        </div>
+
+                        <strong>74%</strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>Consistency</span>
+
+                        <div class="bar">
+                            <div style="width:91%"></div>
+                        </div>
+
+                        <strong>91%</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="ai-recommendation">
+
+                <div class="ai-avatar">
+                    ✦
+                </div>
+
+                <div>
+
+                    <span>AI RECOMMENDATION</span>
+
+                    <h3>
+                        Keep learning consistently!
+                    </h3>
+
+                    <p>
+                        Your consistency is strong. AI recommends
+                        spending 15 more minutes on concept revision.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
